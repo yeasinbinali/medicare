@@ -27,6 +27,16 @@ body {
     border-radius: var(--border-radius);
 }
 
+.btn-simply {
+    border: none;
+    background-color: var(--text-color);
+    color: #ffffff;
+    padding: 10px 30px;
+    font-weight: 600;
+    border-radius: var(--border-radius);
+    font-size: var(--text-size);
+}
+
 /* header */
 
 header {
@@ -57,10 +67,20 @@ li {
     gap: 20px;
 }
 
-.care-section > div {
+.care-section>div {
     border-radius: var(--border-radius);
 }
 
 .numbering {
     font-size: 30px;
+}
+
+
+/* mission */
+
+#mission {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
 }
