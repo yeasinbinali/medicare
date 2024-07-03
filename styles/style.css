@@ -1,0 +1,45 @@
+:root {
+    --text-color: #51ccd1;
+    --secondary-color: #F5F7F8;
+    --text-size: 16px;
+}
+
+body {
+    padding: 0;
+    box-sizing: border-box;
+    width: 90%;
+    margin: 0 auto;
+    font-family: "Inter", sans-serif;
+    font-size: var(--text-size);
+}
+
+/* all btn style */
+
+.btn {
+    border: 1px solid var(--text-color);
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    padding: 10px 30px;
+    font-size: var(--text-size);
+    font-weight: 600;
+    border-radius: 15px;
+}
+
+/* header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+#nav-item {
+    display: flex;
+    gap: 40px;
+}
+
+li {
+    list-style: none;
+    font-size: var(--text-size);
+}
