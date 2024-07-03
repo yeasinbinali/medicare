@@ -1,8 +1,7 @@
 :root {
-    --text-color: #51ccd1;
-    /* --secondary-color: #FFFFF5; */
+    --text-color: #2cadb1;
     --secondary-color: whitesmoke;
-    --light-color: #51cdd1dc;
+    --light-color: #2cadb1a5;
     --text-size: 16px;
     --border-radius: 15px;
 }
@@ -92,18 +91,70 @@ li {
     text-align: justify;
 }
 
-.absolute-box {
+.mission-absolute-box {
     background-color: var(--light-color); 
     width: 50%; 
     position: absolute; 
     bottom: -40px; 
     left: -40px; 
-    padding: 10px;
+    padding: 20px;
+    border-radius: var(--border-radius);
+    color: #fff;
+}
+
+.mission-absolute-box-header {
+    font-size: 24px; 
+    margin: 8px 0;
+}
+
+/* services */
+
+#services {
+    background-color: #FFFFF5;
+    border-radius: var(--border-radius);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 40px;
+}
+
+.service-img {
     border-radius: var(--border-radius);
 }
 
-.absolute-box-header {
-    font-size: 24px; 
+.services-absolute-box {
+    position: absolute;
+    background-color: var(--light-color);
+    padding: 20px;
     color: #fff;
+    bottom: 30px;
+    width: 60%;
+    border-radius: var(--border-radius);
+    left: 30px;
+}
+
+.services-absolute-box-header {
+    font-size: 24px; 
     margin: 8px 0;
+}
+
+.services-description {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.services-description > p {
+    margin: 0;
+    padding-right: 20px;
+}
+
+.services-description-btn {
+    font-size: 20px;
+    background-color: #fff;
+    font-weight: bolder;
+    cursor: pointer;
+    color: black;
+    padding: 10px;
+    border-radius: 100%;
 }
