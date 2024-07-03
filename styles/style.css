@@ -224,3 +224,32 @@ li {
 .accordion-content p {
     margin: 0;
 }
+
+
+/* offer */
+
+.offer-img {
+    filter: brightness(40%);
+}
+
+.offer-header {
+    color: #fff;
+    font-size: 30px;
+}
+
+.offer-description {
+    position: absolute;
+    top: 25%;
+    left: 5%;
+}
+
+.offer-btn {
+    display: flex;
+    gap: 20px;
+}
+
+.offer-logo {
+    position: absolute;
+    right: 2%;
+    top: 5%;
+}
