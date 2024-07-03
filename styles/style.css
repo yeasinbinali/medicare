@@ -1,7 +1,8 @@
 :root {
     --text-color: #51ccd1;
-    --secondary-color: #F5F7F8;
+    --secondary-color: whitesmoke;
     --text-size: 16px;
+    --border-radius: 15px;
 }
 
 body {
@@ -11,6 +12,7 @@ body {
     margin: 0 auto;
     font-family: "Inter", sans-serif;
     font-size: var(--text-size);
+    background-color: var(--secondary-color);
 }
 
 /* all btn style */
@@ -22,7 +24,7 @@ body {
     padding: 10px 30px;
     font-size: var(--text-size);
     font-weight: 600;
-    border-radius: 15px;
+    border-radius: var(--border-radius);
 }
 
 /* header */
@@ -45,3 +47,20 @@ li {
 }
 
 /* banner */
+
+
+/* competitive care */
+
+.care-section {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+.care-section > div {
+    border-radius: var(--border-radius);
+}
+
+.numbering {
+    font-size: 30px;
+}
