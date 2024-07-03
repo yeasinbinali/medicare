@@ -220,13 +220,80 @@
         </section>
 
         <!-- faq -->
-        <section>
+        <section style="margin-bottom: 80px;">
             <div>
                 <button class="btn">FAQ</button>
                 <h2>Frequent Asked Questions</h2>
             </div>
+            <!-- accordion -->
+            <div class="accordion">
+                <div class="accordion-item">
+                    <button class="accordion-header">What are your office hours?</button>
+                    <div class="accordion-content">
+                        <p>Our office hours vary by location, but typically we are open Monday through Friday from 8:00
+                            AM to 5:00 PM. Some locations may offer extended hours or weekend appointments. Please
+                            contact your nearest clinic for specific hours.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">How can I schedule an appointment?</button>
+                    <div class="accordion-content">
+                        <p>Visit our website, find the appointment section, choose your appointment type, select a
+                            doctor or department, pick a date and time, enter your details, and confirm your
+                            appointment.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">Do you accept insurance?</button>
+                    <div class="accordion-content">
+                        <p>No, sorry!</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">What should I bring to my appointment?</button>
+                    <div class="accordion-content">
+                        <p>
+                            Bring your ID, insurance card, medical records, a list of medications, any referral forms,
+                            and a list of questions or concerns to your appointment.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">Do you offer telemedicine appointments?</button>
+                    <div class="accordion-content">
+                        <p>Yes, we offer telemedicine appointments. Visit our website or contact our office to schedule
+                            a virtual consultation with one of our healthcare providers.</p>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
+
+    <!-- js code for accordion -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const accordionHeaders = document.querySelectorAll(".accordion-header");
+
+            accordionHeaders.forEach(header => {
+                header.addEventListener("click", function () {
+                    const content = this.nextElementSibling;
+
+                    // Close all other accordion items
+                    document.querySelectorAll(".accordion-content").forEach(item => {
+                        if (item !== content) {
+                            item.style.display = "none";
+                        }
+                    });
+
+                    // Toggle the current accordion item
+                    if (content.style.display === "block") {
+                        content.style.display = "none";
+                    } else {
+                        content.style.display = "block";
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 
 </html>

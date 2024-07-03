@@ -184,3 +184,43 @@ li {
 .testimonial-description {
     margin: 10px 0;
 }
+
+/* FAQ */
+
+.accordion {
+    width: 80%;
+    /* margin: 0 auto */
+}
+
+.accordion-item {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.accordion-header {
+    background-color: #f1f1f1;
+    padding: 15px;
+    cursor: pointer;
+    border: none;
+    text-align: left;
+    width: 100%;
+    outline: none;
+    font-size: 18px;
+}
+
+.accordion-header:hover {
+    background-color: #ddd;
+}
+
+.accordion-content {
+    padding: 15px;
+    display: none;
+    border-top: 1px solid #ccc;
+    background-color: #fff;
+}
+
+.accordion-content p {
+    margin: 0;
+}
