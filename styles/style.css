@@ -1,6 +1,8 @@
 :root {
     --text-color: #51ccd1;
+    /* --secondary-color: #FFFFF5; */
     --secondary-color: whitesmoke;
+    --light-color: #51cdd1dc;
     --text-size: 16px;
     --border-radius: 15px;
 }
@@ -83,4 +85,25 @@ li {
     justify-content: space-between;
     align-items: center;
     gap: 20px;
+}
+
+.mission-paragraph {
+    padding-right: 60px; 
+    text-align: justify;
+}
+
+.absolute-box {
+    background-color: var(--light-color); 
+    width: 50%; 
+    position: absolute; 
+    bottom: -40px; 
+    left: -40px; 
+    padding: 10px;
+    border-radius: var(--border-radius);
+}
+
+.absolute-box-header {
+    font-size: 24px; 
+    color: #fff;
+    margin: 8px 0;
 }
