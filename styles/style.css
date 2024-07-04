@@ -354,6 +354,9 @@ li {
 
 /* Tablet devices (481px to 768px) */
 @media (max-width: 768px) and (min-width: 481px) {
+
+    /* btn */
+
     .btn {
         border: 1px solid var(--text-color);
         background-color: var(--secondary-color);
@@ -376,15 +379,21 @@ li {
         text-transform: uppercase;
     }
 
+    /* header */
+
     #nav-item {
         display: none;
     }
+
+    /* mission */
 
     #mission {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+
+    /* competitive care */
 
     .care-section {
         display: grid;
@@ -427,6 +436,8 @@ li {
         width: 60px;
     }
 
+    /* services */
+
     #services {
         background-color: #FFFFF5;
         border-radius: var(--border-radius);
@@ -435,6 +446,8 @@ li {
         gap: 20px;
         padding: 30px;
     }
+
+    /* testimonial */
 
     .testimonial-container {
         display: grid;
@@ -447,11 +460,15 @@ li {
         /* margin: 0 auto */
     }
 
+    /* offer */
+
     .offer-description {
         position: absolute;
         top: 10%;
         left: 5%;
     }
+
+    /* footer */
 
     .footer-description {
         display: grid;
@@ -464,6 +481,7 @@ li {
 
 /* Mobile devices (up to 480px) */
 @media (max-width: 480px) {
+    /* btn */
     .btn {
         border: 1px solid var(--text-color);
         background-color: var(--secondary-color);
@@ -486,6 +504,8 @@ li {
         text-transform: uppercase;
     }
 
+    /* header */
+
     .main-logo {
         width: 150px;
         height: 40px;
@@ -495,11 +515,15 @@ li {
         display: none;
     }
 
+    /* mission */
+
     #mission {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+
+    /* comprehensive care */
 
     .care-section {
         display: grid;
@@ -572,6 +596,8 @@ li {
         font-size: 10px;
     }
 
+    /* services */
+
     #services {
         background-color: #FFFFF5;
         border-radius: var(--border-radius);
@@ -609,6 +635,8 @@ li {
         font-size: 10px;
     }
 
+    /* testimonial */
+
     .testimonial-container {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -625,6 +653,8 @@ li {
         font-size: 10px;
     }
 
+    /* accordion */
+
     .accordion {
         width: 100%;
         /* margin: 0 auto */
@@ -638,6 +668,7 @@ li {
         font-size: 12px;
     }
     
+    /* offer */
 
     .offer-description {
         position: absolute;
@@ -648,6 +679,8 @@ li {
     .offer-header {
         font-size: 16px;
     }
+
+    /* footer */
     
     .footer-description {
         display: grid;
