@@ -55,6 +55,11 @@ header {
     margin: 0 auto;
 }
 
+.main-logo {
+    width: 220px;
+    height: 60px;
+}
+
 #nav-item {
     display: flex;
     gap: 40px;
@@ -78,6 +83,53 @@ li {
 
 .care-section>div {
     border-radius: var(--border-radius);
+}
+
+.col-one {
+    border: 1px solid rgba(179, 179, 179, 0.231);
+    grid-row: 1 / span 2;
+    padding: 10px;
+    background: #fff;
+}
+
+.col-two {
+    grid-column: 2 / span 3;
+}
+
+.comprehensive-header {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 36px;
+    font-weight: 600;
+    width: 70%;
+    padding: 10px 0;
+}
+
+.col-three {
+    border: 1px solid rgba(179, 179, 179, 0.231); 
+    grid-row-end: span 2; 
+    padding: 10px; 
+    background: #fff;
+}
+
+.col-four {
+    border: 1px solid rgba(179, 179, 179, 0.231); 
+    padding: 10px; 
+    background: #fff;
+}
+
+.col-five {
+    border: 1px solid rgba(179, 179, 179, 0.231); 
+    padding: 10px; 
+    height: 120px; 
+    margin-top: auto; 
+    background: #fff;
+}
+
+.col-six {
+    border: 1px solid rgba(179, 179, 179, 0.231); 
+    padding: 10px; 
+    background: #fff;
 }
 
 .numbering {
@@ -278,7 +330,7 @@ li {
     gap: 40px;
 }
 
-.footer-description > div > ul > li {
+.footer-description>div>ul>li {
     margin-bottom: 6px;
 }
 
