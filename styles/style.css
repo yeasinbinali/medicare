@@ -179,6 +179,7 @@ li {
 }
 
 .service-img {
+    width: 100%;
     border-radius: var(--border-radius);
 }
 
@@ -338,4 +339,33 @@ li {
     background-color: var(--text-color);
     padding: 5px;
     border-radius: var(--border-radius);
+}
+
+
+/* Media Queries */
+
+/* Tablet devices (481px to 768px) */
+@media (max-width: 768px) and (min-width: 481px) {
+    
+}
+
+
+
+/* Mobile devices (up to 480px) */
+@media (max-width: 480px) {
+    #nav-item {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        text-align: center;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn {
+        margin-top: 10px;
+    }
 }
