@@ -187,6 +187,10 @@ li {
     border-radius: var(--border-radius);
 }
 
+.services-description > p {
+    text-align: justify;
+}
+
 .services-absolute-box {
     position: absolute;
     background-color: var(--light-color);
@@ -203,13 +207,13 @@ li {
     margin: 8px 0;
 }
 
-.services-description {
+.services-absolute-box-description {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.services-description>p {
+.services-absolute-box-description>p {
     margin: 0;
     padding-right: 20px;
 }
@@ -574,7 +578,12 @@ li {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         gap: 20px;
-        padding: 30px;
+        padding: 20px;
+    }
+
+    .services-absolute-box-description>p {
+        margin: 0;
+        padding-right: 0;
     }
 
     .services-absolute-box {
@@ -593,7 +602,7 @@ li {
         margin: 8px 0;
     }
     
-    .services-description {
+    .services-absolute-box-description {
         display: flex;
         justify-content: space-between;
         align-items: center;
